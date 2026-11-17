@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #f4f4f8;
+  background: #09090f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button, textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #a78bfa;
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #8b5cf6;
+  color: white;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #393449 transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #393449;
+  border-radius: 20px;
+}
+
+.prose-rag p {
+  margin: 0 0 10px;
+  line-height: 1.8;
+}
+
+.prose-rag p:last-child {
+  margin-bottom: 0;
+}
+
+.prose-rag ul,
+.prose-rag ol {
+  margin: 8px 0;
+  padding-left: 22px;
+}
+
+.prose-rag li {
+  margin: 5px 0;
+}
+
+.prose-rag strong {
+  color: #fff;
+}
+
+.prose-rag code {
+  background: #242033;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
